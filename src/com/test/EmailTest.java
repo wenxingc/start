@@ -16,7 +16,7 @@ public class EmailTest  {
         InputStream in = EmailTest.class.getClassLoader().getResourceAsStream("config/conf/mail.properties");
         mailSender = new JavaMailSenderImpl();
         // 设置参数
-        mailSender.setHost("smtp.isoftstone.com");
+        mailSender.setHost("smtp.isofe111.com");
         mailSender.setUsername("xingwenc");
         mailSender.setPassword("");
         mailSender.setDefaultEncoding("UTF-8");
@@ -27,7 +27,7 @@ public class EmailTest  {
 
         MimeMessageHelper helper=new MimeMessageHelper(mailSender.createMimeMessage());
 
-        helper.setFrom("xingwenc@isoftstone.com");
+        helper.setFrom("xingwenc1112@isofe111.com");
         helper.setSubject("测试");
         helper.setText("测试测试内容", true);
         helper.setTo("@163.com");

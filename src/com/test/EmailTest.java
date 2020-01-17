@@ -16,7 +16,7 @@ public class EmailTest  {
         InputStream in = EmailTest.class.getClassLoader().getResourceAsStream("config/conf/mail.properties");
         mailSender = new JavaMailSenderImpl();
         // 设置参数
-        mailSender.setHost("smtp.isofe111.com");
+        mailSender.setHost("smtp.22223isofe111.com");
         mailSender.setUsername("aaa");
         mailSender.setPassword("");
         mailSender.setDefaultEncoding("UTF-8");

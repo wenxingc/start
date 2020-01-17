@@ -17,7 +17,7 @@ public class EmailTest  {
         mailSender = new JavaMailSenderImpl();
         // 设置参数
         mailSender.setHost("smtp.isofe111.com");
-        mailSender.setUsername("xingwenc");
+        mailSender.setUsername("aaa");
         mailSender.setPassword("");
         mailSender.setDefaultEncoding("UTF-8");
         mailSender.setPort(25);
@@ -27,10 +27,10 @@ public class EmailTest  {
 
         MimeMessageHelper helper=new MimeMessageHelper(mailSender.createMimeMessage());
 
-        helper.setFrom("xingwenc1112@isofe111.com");
+        helper.setFrom("aaa1112@isofe111.com");
         helper.setSubject("测试");
         helper.setText("测试测试内容", true);
-        helper.setTo("@163.com");
+        helper.setTo("@126.com");
         helper.setValidateAddresses(true);
         helper.setSentDate(new Date());
 
